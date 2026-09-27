@@ -1,0 +1,19 @@
+<div class="payment-backdrop">
+  <section
+    class="payment-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="payment-title"
+    [attr.data-order-id]="orderId"
+  >
+    <div class="payment-icon" aria-hidden="true">$</div>
+
+    <h2 id="payment-title" class="payment-title">Payment Gateway Placeholder</h2>
+
+    <p class="payment-text">
+      This is a standalone payment microfrontend, integrated into the checkout flow.
+    </p>
+
+    <button type="button" class="payment-close" (click)="close()">Close</button>
+  </section>
+</div>
